@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RealPhone</title> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+}
+</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <div class="main">
+       <nav>
+           <div class="logo">
+               <img src="images/logo.png">
+           </div>
+
+           <div class="nav-links">
+               <ul>
+                   <li> <a href="#">Home</a> </li>
+                   <li> <a href="https://www.91mobiles.com/">Phone</a> </li>
+                   <li> <a href="https://www.91mobiles.com/">Accessories</a> </li>
+                   <li> <a href="https://www.flipkart.com/mobile-phones-store">Cart</a> </li>
+               </ul>
+           </div>
+
+       </nav>
+       <div class="information">
+           <div class="overlay"></div>
+        <img src="VivoT1.jpg" class="mobile">
+           <div id="circle">
+                <div class="feature one">
+                    <img src="images/camera.png">
+                    <div>
+                        <h1>Camera</h1>
+                        <p>50MP Triple Cameras LED Flash</p>
+                    </div>
+                </div>
+                <div class="feature two"> 
+                    <img src="images/processor.png">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>Snapdragon 695 Octa-core 11nm</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/display.png">
+                    <div>
+                        <h1>Display</h1>
+                        <p>6.58 inches" LCD 120Hz Refresh Rate</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/battery.png">
+                    <div>
+                        <h1>Battery Life</h1>
+                        <p>5000mAh Fast Charging</p>
+                    </div>
+                </div>
+           </div>
+
+       </div>
+       <div class="controls">
+           <img src="images/arrow.png" id="upBtn">
+           <h3>Features</h3>
+           <img src="images/arrow.png" id="downBtn">
+       </div>
+
+    </div>
+</form>
+<script>
+    var circle = document.getElementById("circle");
+    var upBtn = document.getElementById("upBtn");
+    var downBtn = document.getElementById("downBtn");
+
+    var rotateValue = circle.style.transform;
+    var rotateSum;
+
+    upBtn.onclick = function()
+    {
+        rotateSum = rotateValue + "rotate(-90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+    }
+
+    downBtn.onclick = function()
+    {
+        rotateSum = rotateValue + "rotate(90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+    }
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<title> Login Page </title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+body {
+  font-family: "Sofia", sans-serif;
+  background-image: url("s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg");
+ 
+}
+
+button { 
+       background-color: black; 
+       width: 53%;
+        color: white; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ 
+ input[type=text]  { 
+        width: 40%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+    
+
+    input[type=password] { 
+        width: 40%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.6; 
+    } 
+  
+      
+   
+ .container { 
+        padding: 25px; 
+        background-color: transparent;
+        width: 50%;
+    } 
+</style> 
+</head>  
+<script>
+    function realPhone()
+    {
+        var winobj = window.open("http://127.0.0.1:5500/index.html#");
+    }
+</script>
+<body>  
+    <style>
+        body {
+          background-image: url('l3.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+    <center> <h1>  Login  </h1> </center> 
+    <center>
+
+    <form action="" method="post">
+        <div class="container"> 
+            <label><b>Username : </b></label> 
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <br>
+            <label><b>Password : </b></label> 
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <br>
+            <button type="submit" onclick="realPhone()"><b>Login</b></button> 
+            <br>
+            <input type="checkbox" checked="checked"> Remember me 
+            <br>
+            Forgot <a href="#"> password? </a> 
+        </div> 
+    </form>   
+</center>
+</body>   
+</html>
